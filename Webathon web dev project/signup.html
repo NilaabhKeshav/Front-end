@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Web-Haven_form</title>
+    </head>
+<div>
+	<H1><b>Please fill the form</b></H1>
+</div>
+<link rel="stylesheet" type="text/css" href="sustylesheet.css">
+<body>
+<script>
+function tested()
+{
+	var a=document.getElementById("m1").value;
+	var r=/^[A-Za-z]{8}$/;
+	if(r.test(a))
+	{
+		document.getElementById("m2").innerHTML="Valid";
+	}
+	else
+	{
+		document.getElementById("m2").innerHTML="Invalid";
+	}
+}
+</script>
+<form>
+Create a user name:<br>(8 characters)<br>
+<input id="m1" type="text" name="username" onblur="tested();" required><span id="m2"></span><br><br>
+Create password:<br>(8 characters)<br>
+<input id="pwd" type="password" name="password" pattern="[A-Za-z]{8}" title="Invalid" required><br><br>
+Which course are you interested in?<br>
+<input type="checkbox" type="skills">HTML<br>
+<input type="checkbox" type="skills">CSS<br>
+<input type="checkbox" type="skills">Javascript<br><br>
+Tell us something about yourself:<br><br>
+Birthday:
+<input type="date" name="nilaabh"><br><br>
+Select Your Favorite color:
+<input id="id2" type="color"><br><br>
+<input id="id1" type="submit" value="submit"><br>
+</form>
+</body>
+
+</html>

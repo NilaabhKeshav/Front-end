@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web-Haven_example</title>
+<H1 class = "title">Alert and Prompt</H1>
+<link rel="stylesheet" type="text/css" href="exstylesheet.css">
+<p class="nkClass"><em>This is an <b>example page</b></em> </p><br>
+</head>
+<table>
+<tr>
+<td>Day 1</td><td>HTML</td>
+</tr>
+<tr>
+<td>Day 2</td><td>CSS</td>
+</tr>
+<tr>
+<td>Day 3</td><td>Javascript</td>
+</tr>
+<tr>
+<td>Day 4</td><td>Web-Developer</td>
+</tr>
+</table>
+<body onload="alert('Page is Loaded');">
+<script>
+
+function alert1()
+{
+	var a=document.getElementById("id1").value;
+	alert("Your Number is :"+a);
+}
+function prompt1()
+{
+	var p=prompt("Please enter Number","Nilaabh");
+	if(p!="")
+	{
+		document.getElementById("id2").innerHTML="Your Name is "+p;
+	}
+	else
+	{
+		alert("No input");
+	}
+}
+/*function blured()
+{
+	var str=document.getElementById("id3").value;
+	if(str.length>0)
+	{
+		document.getElementById("m1").innerHTML="Valid";
+	}
+	else
+	{
+		alert("Input text");
+	}
+}*/
+</script>
+<input id="id1" type="number"/>
+<button class="alert" onclick="alert1();">Alert</button><br><br>
+<button class="prompt" onclick="prompt1();"> Prompt</button>
+<p id="id2">Enter Name by clicking Prompt</p>
+</body>
+</html>

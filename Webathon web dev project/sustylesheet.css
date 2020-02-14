@@ -1,0 +1,45 @@
+body
+{
+	background-color:rgb(200,150,150);
+	text-align:center;
+    padding:10%;
+    background-image:url(form1.jpg);
+    background-size:cover;
+}
+H1
+{
+    text-align:center;
+    color:white;
+    background-color:black;
+}
+input
+{
+	margin-left:100px;
+}
+form
+{
+	border:1px solid black;
+	margin-left:20px;
+	padding:10%;
+    font-size:160%;
+    text-align:center;
+    margin:0 auto;
+    opacity:0.8;
+    color:black;
+    font-weight:bold;
+}
+#id1
+{
+	background-color:orange;
+	margin-left:200px;
+	text-align:bottom;
+	font-size:120%;
+}
+
+.header{
+    background-color:black;
+    color:white;
+    height:50px;
+    width:100%;
+    margin-top:-100px;
+}
